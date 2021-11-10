@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(
+        to right,
+        #FFD24D 0%,
+        #FFD24D 30%,
+        #FFB020 60%,
+        #FFB020 80%,
+        #ffffff 80%,
+        #ffffff 100%
+    );
+}
