@@ -25,8 +25,8 @@ body {
 #signInForm {
     background-color: #ffffff;
     border-radius: 10px;
-    min-width: 25%;
-    width: 25%;
+    min-width: 30%;
+    width: 30%;
     height: 340px;
     float: right;
     margin-top: 10%;
@@ -38,7 +38,7 @@ body {
 
 #signInForm h1 {
     text-align: center;
-    font-size: 18px;
+    font-size: 17px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -52,6 +52,7 @@ body {
     margin: 5px;
     margin-left: 15%;
     outline-style: none;
+    text-align: center; 
 }
 
 #emailInput::placeholder {
@@ -59,7 +60,7 @@ body {
     background-repeat: no-repeat;
     background-position: .5rem center;
     background-size: 15px 15px;
-    text-align: center;   
+    width: 80%;
 }
 
 #passwordInput::placeholder {
@@ -67,7 +68,7 @@ body {
     background-repeat: no-repeat;
     background-position: .5rem center;
     background-size: 15px 15px;
-    text-align: center;  
+    width: 64%;
 }
 
 #signInForm button {
@@ -98,4 +99,65 @@ p {
     text-align: center;
     font-size: 10px;
     padding: 1px 0 40px 0;
+}
+
+@media (max-width: 993px) { 
+    #logo img{
+        width: 65%;
+        height: 35%;
+        margin-top: 70%;
+    }
+
+    #signInForm {
+        margin-top: 25%;
+    }
+
+    #signInForm input {
+        font-size: 8px;
+        padding: 5px 0 5px 0;
+    }
+
+    #signInForm input::placeholder {
+        background-size: 10px 10px;
+        width: 120%;
+    }
+
+    #signInForm button {
+        font-size: 10px;       
+    }
+}
+
+@media (max-width: 430px) { 
+    body {
+        display: block;
+        background: linear-gradient(
+            to right,
+            #FFD24D 0%,
+            #FFD24D 10%,
+            #FFB020 40%,
+            #FFB020 60%,
+            #ffffff 60%,
+            #ffffff 100%
+        );
+    }
+
+    #logo img{
+        width: 80%;
+        height: 30%;
+        margin-top: 20%;
+        margin-right: 0;
+        margin-left: 10%;
+    }
+
+    /* #signInForm {
+        width: 94%;
+        height: 30%;
+        margin-top: 20%;
+        margin-right: 3%;
+        margin-left: 3%;
+    } */
+
+    #signInForm h1 {
+        display: none
+    }
 }
