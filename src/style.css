@@ -73,13 +73,14 @@ body {
 
 #signInForm button {
     border-style: hidden;
-    border-radius: 5px;
+    border-radius: 12px;
     font-weight: 550;
     font-size: 15px;
     width: 70%;
     margin-top: 3%;
     margin-left: 15%;
     padding: 5px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
     background: linear-gradient(
         to right,
         #FFD24D 0%,
@@ -133,12 +134,13 @@ p {
         background: linear-gradient(
             to right,
             #FFD24D 0%,
-            #FFD24D 10%,
-            #FFB020 40%,
-            #FFB020 60%,
-            #ffffff 60%,
-            #ffffff 100%
+            #FFD24D 50%,
+            #FFB020 80%,
+            #FFB020 100%,
+            #ffffff 80%,
+            #ffffff 100% 
         );
+        background-repeat: no-repeat;
     }
 
     #logo img{
@@ -163,7 +165,7 @@ p {
     #signInForm h1 {
         position: absolute;
         top: -70px;
-        left: 60px;
+        left: 45px;
         text-align: center;
     }
 
@@ -173,13 +175,11 @@ p {
         margin-left: 5%;
     }
 
-    #emailInput::placeholder {
-        background-size: 10px 10px;
-        width: 200px;
-    }
-    
-    #passwordInput::placeholder {
-        width: 10px;
+    #signInForm button {
+        font-size: 15px; 
+        margin-left: 15px;
+        width: 91%;
+        height: 35px;      
     }
 
     #signInForm #signUp {
