@@ -45,7 +45,7 @@ body {
 
 #signInForm input {
     width: 66%;
-    border-radius: 8px;
+    border-radius: 12px;
     border-width: 2px;
     border-color: #14131332;
     padding: 5px 0 5px 0;
@@ -60,7 +60,7 @@ body {
     background-repeat: no-repeat;
     background-position: .5rem center;
     background-size: 15px 15px;
-    width: 80%;
+    width: 250px;
 }
 
 #passwordInput::placeholder {
@@ -68,7 +68,7 @@ body {
     background-repeat: no-repeat;
     background-position: .5rem center;
     background-size: 15px 15px;
-    width: 64%;
+    width: 210px;
 }
 
 #signInForm button {
@@ -113,13 +113,13 @@ p {
     }
 
     #signInForm input {
-        font-size: 8px;
+        font-size: 15px;
         padding: 5px 0 5px 0;
     }
 
     #signInForm input::placeholder {
-        background-size: 10px 10px;
-        width: 120%;
+        background-size: 16px 16px;
+        width: 250px;
     }
 
     #signInForm button {
@@ -149,15 +149,43 @@ p {
         margin-left: 10%;
     }
 
-    /* #signInForm {
-        width: 94%;
-        height: 30%;
+    #signInForm {
+        position: relative;
+        width: unset;
+        height: 210px;
+        float: unset;
         margin-top: 20%;
         margin-right: 3%;
         margin-left: 3%;
-    } */
+        padding: 10px;
+    } 
 
     #signInForm h1 {
-        display: none
+        position: absolute;
+        top: -70px;
+        left: 60px;
+        text-align: center;
+    }
+
+    #signInForm input {
+        width: 90%;
+        height: 25px;
+        margin-left: 5%;
+    }
+
+    #emailInput::placeholder {
+        background-size: 10px 10px;
+        width: 200px;
+    }
+    
+    #passwordInput::placeholder {
+        width: 10px;
+    }
+
+    #signInForm #signUp {
+        position: absolute;
+        bottom: -95px;
+        left: 60px;
+        text-align: center;
     }
 }
